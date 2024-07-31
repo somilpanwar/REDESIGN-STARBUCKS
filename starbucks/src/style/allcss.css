@@ -1,0 +1,13 @@
+.navbar{
+    background-color: red;
+    display: flex;
+}
+.links{
+   
+    color: white;
+
+}
+.links ul{
+    display: flex;
+    gap: 10px;
+}
