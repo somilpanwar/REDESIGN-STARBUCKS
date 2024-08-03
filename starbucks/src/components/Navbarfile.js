@@ -2,7 +2,7 @@
 import '../style/allcss.css';
 import Navbar from 'react-bootstrap/Navbar';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
-import { faBars, faCar, faEnvelope, faHome, faHouse, faPen, faPerson } from '@fortawesome/free-solid-svg-icons';
+import { faBars, faCalendar, faCar, faCartShopping, faEnvelope, faHome, faHouse, faPen, faPerson, faSearch } from '@fortawesome/free-solid-svg-icons';
 
 
 
@@ -11,31 +11,36 @@ import { faBars, faCar, faEnvelope, faHome, faHouse, faPen, faPerson } from '@fo
 
 function Navbarfile() {
   return (
+  
    <Navbar className='navbar'>
     <div className='logo'>
       
-      <img src='...' alt='STARBUCKS'></img>
+      
+    <img src='/images/starbuckslogo.png' alt="STARBUCKS"></img>
+    <h1>STARBUCKS</h1>
+
      
 
     </div>
 
     <div className='links'>
       <ul type='none'>
-        <li>HOME</li>
-        <li>CONTACT</li>
-        <li>ORDERS</li>
+        <li>Home</li>
+        <li>Contact</li>
+        <li>Orders</li>
       </ul>
     </div>
 
 
     <div className='search'>
-    <FontAwesomeIcon icon={faHome} />
-    <FontAwesomeIcon icon={faPen} />
+    
 
       <input 
       type='text'
       placeholder='Search'/>
-      <img src='/images/search.png' alt='images'/>
+      <FontAwesomeIcon icon={faSearch}/>
+      <FontAwesomeIcon icon={faPerson}/>
+      <FontAwesomeIcon icon={faCartShopping}/>
           </div>
 
    </Navbar>

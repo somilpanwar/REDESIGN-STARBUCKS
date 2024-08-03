@@ -1,13 +1,296 @@
+* {
+font-family: Arial, Helvetica, sans-serif;
+    margin: 0;
+    padding: 0;
+    
+}
 .navbar{
-    background-color: red;
+    width: 100%;
+    z-index: 9999;
+    position: fixed;
+    top: 0;
+    left: 0;
+    background-color: white;
+    color: rgb(2, 67, 2);
+    padding: 5px;
     display: flex;
+    align-items: center;
+    gap: 5%;
+}
+.logo{
+    display: flex;
+    align-items: center;
+}
+.logo > img{
+   height: 50px ;
 }
 .links{
    
-    color: white;
+    color: rgb(2, 36, 2);
+    margin-left: 10px;
 
 }
 .links ul{
     display: flex;
     gap: 10px;
+}
+.search{
+    color: black;
+    margin-left: 30pc;
+    display: flex;
+    align-items: center;
+    gap: 13px;
+}
+.search input{
+    padding: 8px;
+    box-shadow: 0px 3px 3px grey;
+    border-radius: 20px;
+    border: 1px solid gray;
+}
+input::placeholder{
+    color: rgb(1, 24, 1);
+}
+/* css for showcase file */
+
+
+.circle{
+    border-radius: 50%;
+    
+    height: 25pc;
+    width: 20pc;
+    margin-left: -15pc;
+}
+.boxes{
+    /* background-color: red; */
+    height: 70px;
+    width: 70px;
+    position: absolute;
+    
+}
+.boxes >img{
+    filter: drop-shadow(10px 20px 10px rgba(0, 0, 0, 0.495));
+   
+    height: 160%;
+    width: 170%;
+    scale: 1.2;
+    margin-left: 30px;
+}
+.boxes:nth-child(1 ){
+margin:50px -60px;
+
+
+}
+.boxes:nth-child(2 ){
+    margin: -50px 50px;
+}
+.boxes:nth-child(3 ){
+    margin: 150px 55px;
+}
+.boxes:nth-child(4 ){
+    margin: 50px 150px;
+}
+.rota{
+
+    z-index: 999;
+     margin: 100px -280px;
+    display: flex;
+    gap: 2px;
+    height: 10pc;
+    width: 10pc;
+    padding: 20px;
+    scale: 2;
+    transition: all 1s ease-out;
+
+   
+   
+}
+
+/* .back{
+    z-index: -999;
+    position: absolute;
+    background-image: url("https://wallpapers.com/images/featured/starbucks-ack1avygrxnhaxjq.jpg");
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    opacity: 0.7;
+    height: 90%;
+    width: 100%;
+    
+    padding: 0px;
+ 
+} */
+.main{
+    background-image: linear-gradient(45deg, rgb(5, 118, 14) , rgb(2, 27, 2));
+    display: flex;
+    gap: 700px;
+    overflow: hidden;
+}
+.info{
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+   color: white;
+   margin-top: 90px;
+}
+.info>h1{
+    filter: drop-shadow(4px 6px 5px black );
+    color: white;
+    font-size: 5pc;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+.info >h3{
+
+}
+.info>a{
+    font-weight: 600;
+    color: black    ;
+    text-decoration: none;
+}
+.info >P{
+    width: 500px;
+    color: white;
+}
+
+/* 
+css for other  */
+
+.other{
+    padding: 80px;
+    display: flex;
+    gap: 30px;
+    flex-direction: column;
+}
+.item{
+    display: flex;
+    justify-content: space-between;
+}
+.box{
+    text-align: center;
+}
+.box>img:hover{
+     animation: move .6s  2 alternate ease-in;
+}
+@keyframes move {
+    from{
+       transform: rotateY(0deg);
+    } 
+    to{
+      transform: rotateY(180deg);
+    }
+    
+}
+.box >img{
+    border-radius: 50%;
+    height: 100px;
+    width: auto;
+}
+.recommends{
+    margin: 0px;
+display: flex;
+justify-content: space-evenly;
+width: 100%;
+    
+
+    
+}
+
+.recommends>.card{
+   
+    padding: 20px;
+    border-radius: 20px;
+    background-image: linear-gradient(to right, rgb(65, 105, 65),rgb(1, 33, 1));
+    color: rgb(1, 31, 1);  
+    height: 90px;
+    width: 150px;
+  
+
+}
+
+#icon{
+    padding: 5px;
+ 
+}
+.card{
+    transition: all .1s ease-in;
+    box-shadow: 0px 0px 0px black;
+}
+.card>h3,h6{
+    color: white;  
+    margin-top: 2px;
+
+}
+.card>h2{
+    margin-top: 5px;
+    
+}
+.card:hover{
+    margin-top: -20px;
+    scale: 1.1;
+    box-shadow: 7px 8px 5px rgba(0, 0, 0, 0.445);
+}
+.slider{
+    margin-left: 20px;
+    padding: 30px;
+    height: 300px;
+    width:90%;
+    overflow: hidden;
+
+
+}
+.slider >img{
+    width: 100%;
+    height: 100%;
+
+}
+.details{
+   
+    margin-top: 220px;
+    padding: 20px;
+    z-index: 999;
+    position: absolute;
+    color: white;
+
+}
+.details>h1{
+    color: white;
+    font-size: 40px;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+
+}
+.details>p{
+    color: white;
+}
+
+/* css for foot */
+
+.foot{
+    padding: 40px;
+    padding-top: 80px;
+   color: white; 
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    display: flex;
+    gap:50px;
+    background-image: radial-gradient(rgb(12, 85, 12),rgb(2, 35, 2));
+
+}
+.foot>img{
+    height: 100px;
+    width: 130px;
+}
+.aboutus,.respon,.quick{
+    margin-left: 10px;
+}
+
+.aboutus>ul,.respon>ul,.quick>ul{
+    margin-top: 10px;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+
+}
+.social>ul{
+    margin-top: 10px;
+    display: flex;
+    gap: 15px;
 }
