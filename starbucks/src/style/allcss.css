@@ -4,6 +4,13 @@ font-family: Arial, Helvetica, sans-serif;
     padding: 0;
     
 }
+.samplevido{
+    display: none;
+    
+}
+.vi{
+    display: none;
+}
 .navbar{
     width: 100%;
     z-index: 9999;
@@ -21,9 +28,60 @@ font-family: Arial, Helvetica, sans-serif;
     display: flex;
     align-items: center;
 }
-.logo > img{
-   height: 50px ;
+.logo>h1{
+    font-size: 2vw;
 }
+.logo > img{
+   height: 10vh ;
+}
+.ham{
+    margin-left: 26vw;
+    display: none;
+    scale: 1.6;
+}
+.menu{
+  
+ display: none;
+    
+}
+.menu.open {
+    display: flex;
+    flex-direction: column;
+    margin-top: 56%;
+    /* text-align: center; */
+    width: 100%;
+    background-color: rgba(0, 128, 0, 0.526);
+    position: absolute;
+   
+     /* Show the menu when open */
+    
+  }
+.menu.open>li{
+    height: 30px;
+    font-weight: 600;
+    color: rgb(3, 40, 3);
+    border: 1px solid white;
+    background-color: rgba(251, 247, 247, 0.166);
+    margin-top: 1px;
+    text-align: center;
+
+}
+.menu.close{
+    display: none;
+}
+  
+
+  
+  .menu li a {
+
+    color: black;
+    text-decoration: none;
+    
+  }
+  
+  .menu li:hover {
+    background-color: #1054047b;
+  }
 .links{
    
     color: rgb(2, 36, 2);
@@ -54,11 +112,8 @@ input::placeholder{
 
 
 .circle{
-    border-radius: 50%;
-    
-    height: 25pc;
-    width: 20pc;
-    margin-left: -15pc;
+   
+   
 }
 .boxes{
     /* background-color: red; */
@@ -73,7 +128,7 @@ input::placeholder{
     height: 160%;
     width: 170%;
     scale: 1.2;
-    margin-left: 30px;
+    
 }
 .boxes:nth-child(1 ){
 margin:50px -60px;
@@ -92,12 +147,11 @@ margin:50px -60px;
 .rota{
 
     z-index: 999;
-     margin: 100px -280px;
+    margin-left: -510px;
+     margin-top: 80px ;
     display: flex;
-    gap: 2px;
     height: 10pc;
     width: 10pc;
-    padding: 20px;
     scale: 2;
     transition: all 1s ease-out;
 
@@ -120,16 +174,21 @@ margin:50px -60px;
  
 } */
 .main{
+    padding: 20px;
+    width: 100%;
     background-image: linear-gradient(45deg, rgb(5, 118, 14) , rgb(2, 27, 2));
-    display: flex;
-    gap: 700px;
-    overflow: hidden;
+   display: flex;
+   gap: 20%;
+   overflow: hidden;
+    
+    
 }
 .info{
     font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
     display: flex;
     flex-direction: column;
     gap: 20px;
+    margin-left: 90px;
    color: white;
    margin-top: 90px;
 }
@@ -148,7 +207,7 @@ margin:50px -60px;
     text-decoration: none;
 }
 .info >P{
-    width: 500px;
+    width: 40%;
     color: white;
 }
 
@@ -156,14 +215,23 @@ margin:50px -60px;
 css for other  */
 
 .other{
-    padding: 80px;
+    width: 100%;
+    padding: 0px;
+    margin-top: 20px;
     display: flex;
-    gap: 30px;
+    gap: 20px;
     flex-direction: column;
 }
+.other h1{
+    padding: 10px 30px;
+}
+
 .item{
+   
+   
+    width: 100%;
     display: flex;
-    justify-content: space-between;
+    justify-content: space-around;
 }
 .box{
     text-align: center;
@@ -201,8 +269,8 @@ width: 100%;
     border-radius: 20px;
     background-image: linear-gradient(to right, rgb(65, 105, 65),rgb(1, 33, 1));
     color: rgb(1, 31, 1);  
-    height: 90px;
-    width: 150px;
+    height: 12vh;
+    width: 12vw;
   
 
 }
@@ -265,18 +333,20 @@ width: 100%;
 /* css for foot */
 
 .foot{
-    padding: 40px;
-    padding-top: 80px;
+    font-size: 120%;
+    width: 100%;
+   padding: 5%  0px;
    color: white; 
     font-family: Georgia, 'Times New Roman', Times, serif;
     display: flex;
-    gap:50px;
+    gap:5%;
     background-image: radial-gradient(rgb(12, 85, 12),rgb(2, 35, 2));
 
 }
 .foot>img{
-    height: 100px;
-    width: 130px;
+    height: 10%;
+    width: 10%;
+    
 }
 .aboutus,.respon,.quick{
     margin-left: 10px;
@@ -290,7 +360,103 @@ width: 100%;
 
 }
 .social>ul{
-    margin-top: 10px;
+    margin-top: 0px;
     display: flex;
     gap: 15px;
+}
+
+
+@media (max-width: 576px) {
+    /* Styles for phones */
+   .main{
+    width: 100%;
+    background-image: none;
+    height: 60vh;
+
+   }
+   .rota{
+    display: none;
+   }
+    .navbar{
+        width: 100%;
+        padding: 0px;
+        margin: 0px;
+    }
+    .search{
+        display: none;
+    }
+    .logo>h1{
+        font-size: 5vw;
+    }
+    .links{
+        display: none;
+    }
+
+    .ham{
+        display: block;
+    }
+    .menu{
+        display: block;
+    }
+    .foot{
+        padding: 0px;
+        display: flex;
+        flex-direction:column;
+       
+    }
+    .foot img{
+        width: 30%;
+    }
+    .otherlogo{
+        display: flex ;
+        margin-top: 5%;
+        margin-left: 16%;
+        gap: 20px;
+    }
+    .social{
+      margin-left: 5px;
+    }
+    .slider{
+        margin-left: 0px;
+
+        padding: 0px 15px;
+    }
+    .details{
+        display: none;
+        color: black;
+    }
+    .details>p{
+        color: black;
+    }
+    .recommends{
+        width: 100%;
+        display: flex;
+        flex-wrap: wrap;
+        gap: 15px;
+    }
+    .recommends>.card{
+        width: 30vw;
+        height: 15vh;
+    }
+    .item{
+        display: flex;
+        flex-wrap: wrap;
+        width: 100%;
+    }
+    .info{
+     display: none;
+    }
+ 
+   
+    .vi{
+        display: block;
+    height: 70vh;
+
+
+  }
+  .aboutus>ul,.respon>ul,.quick>ul,.social{
+      padding: 5px;
+
+}
+
 }

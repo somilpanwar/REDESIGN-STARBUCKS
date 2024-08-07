@@ -20,6 +20,11 @@ const Showcase = () => {
     
     <div className='main'>
       {/* <div className='back'></div> */}
+      <div className='samplevideo'>
+        <video width={"600px"} loop className='vi' autoPlay="true" muted="true">
+          <source src='/images/2909914-uhd_2732_1440_24fps.mp4' type="video/mp4" />
+        </video>
+      </div>
 
         {/* <div className='circle'></div> */}
        <div className='rota' style={boxrotate} onClick={handleClick}>
