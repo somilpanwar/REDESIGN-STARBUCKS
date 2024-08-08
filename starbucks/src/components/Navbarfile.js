@@ -10,8 +10,9 @@ import { useState } from 'react';
 
 
 
-function Navbarfile() {
+function Navbarfile({color} ) {
   const [isOpen, setIsOpen] = useState("");
+  const [color , setcolor] = useState("black")
 
   const toggleMenu = () => {
     setIsOpen(!isOpen);
@@ -34,7 +35,7 @@ function Navbarfile() {
 
     </div>
     <ul className={`menu ${isOpen ? "open" : "close"}`}>
-          <li><a href="#home">Home</a></li>
+          <li ><a href="#home" >Home</a></li>
           <li><a href="#about">About</a></li>
           <li><a href="#services">Services</a></li>
           <li><a href="#contact">Contact</a></li>
@@ -42,9 +43,10 @@ function Navbarfile() {
 
     <div className='links'>
       <ul type='none'>
-        <li>Home</li>
-        <li>Contact</li>
-        <li>Orders</li>
+      <li ><a href="/home" style={{color:color}}>Home</a></li>
+          <li><a href="/order">Order</a></li>
+          <li><a href="#services">Store</a></li>
+          <li><a href="#contact">Gift</a></li>
       </ul>
     </div>
 

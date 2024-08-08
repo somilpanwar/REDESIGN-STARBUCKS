@@ -1,20 +1,23 @@
 
+import React from 'react';
+import { BrowserRouter as Router, Route, Routes } from 'react-router-dom';
+import Navbarfile from './components/Navbarfile'
 import '../src/';
-import Footer from './components/Footer';
-import Navbarfile from './components/Navbarfile';
-import Other from './components/Other';
-import Showcase from './components/Showcase';
+import Home from './components/Home';
+import Order from './components/Order';
+
 
 
 function App() {
   return (
     <>
-  <Navbarfile/>
-  <Showcase/>
-  <Other/>
-  <Footer/>
-      
-    
+<Router>
+     <Routes>
+
+    <Route path="/home" element={<Home/>}/>
+    <Route path="/order" element={<Order/>}/>
+     </Routes>
+</Router>
     
     
     </>
