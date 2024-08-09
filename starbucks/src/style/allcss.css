@@ -101,6 +101,12 @@ body{
     color: black;
     text-decoration: none;
 }
+.links ul li a.active{
+    
+    color: green;
+    text-decoration: underline 2px green;
+    
+}
 .search{
     color: black;
     margin-left: 30pc;
@@ -374,6 +380,10 @@ width: 100%;
     gap: 15px;
 }
 
+.imgs img{
+    height: 200px;
+    width: 200px;
+}
 
 @media (max-width: 576px) {
     /* Styles for phones */

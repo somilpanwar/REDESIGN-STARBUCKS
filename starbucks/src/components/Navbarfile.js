@@ -4,15 +4,16 @@ import Navbar from 'react-bootstrap/Navbar';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faBars, faCalendar, faCar, faCartShopping, faEnvelope, faHamburger, faHome, faHouse, faPen, faPerson, faSearch } from '@fortawesome/free-solid-svg-icons';
 import { useState } from 'react';
+import { NavLink } from 'react-router-dom';
 
 
 
 
 
 
-function Navbarfile({color} ) {
+function Navbarfile( ) {
   const [isOpen, setIsOpen] = useState("");
-  const [color , setcolor] = useState("black")
+  
 
   const toggleMenu = () => {
     setIsOpen(!isOpen);
@@ -43,10 +44,20 @@ function Navbarfile({color} ) {
 
     <div className='links'>
       <ul type='none'>
-      <li ><a href="/home" style={{color:color}}>Home</a></li>
-          <li><a href="/order">Order</a></li>
-          <li><a href="#services">Store</a></li>
-          <li><a href="#contact">Gift</a></li>
+      <li> <NavLink to="/" className={({ isActive }) => isActive ? 'active' : ''}>
+            Home
+          </NavLink>
+      </li>
+
+      <li> <NavLink to="/order" className={({ isActive }) => isActive ? 'active' : ''}>
+            Order
+          </NavLink>
+      </li>
+
+      <li> <NavLink to="/gift" className={({ isActive }) => isActive ? 'active' : ''}>
+            Gift
+          </NavLink>
+      </li>
       </ul>
     </div>
 

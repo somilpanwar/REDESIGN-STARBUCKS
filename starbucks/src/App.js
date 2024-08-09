@@ -1,10 +1,11 @@
 
 import React from 'react';
 import { BrowserRouter as Router, Route, Routes } from 'react-router-dom';
-import Navbarfile from './components/Navbarfile'
 import '../src/';
 import Home from './components/Home';
 import Order from './components/Order';
+import Gift from './components/Gift';
+import Product from './components/Product'
 
 
 
@@ -14,8 +15,10 @@ function App() {
 <Router>
      <Routes>
 
-    <Route path="/home" element={<Home/>}/>
-    <Route path="/order" element={<Order/>}/>
+    <Route path="/" element={<Home/>}/>
+    <Route path="/order"  element={<Order/>}/>
+    <Route path="/gift"  element={<Gift/>}/>
+    <Route path="/item"  element={<Product/>}/>
      </Routes>
 </Router>
     
