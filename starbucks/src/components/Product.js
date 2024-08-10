@@ -29,16 +29,11 @@ const Product = () => {
          return (
             <div key={i}>
                 <ul>
-                <li className='imgs'>
-                  
-                  <img src={`${e.image_url}`}/>
-                  
-                </li>
-                    <li>
-                        {e.id}
-                    </li>
                     <li>
                         {e.name}
+                    </li>
+                    <li>
+                      {e.price}
                     </li>
                 </ul>
 

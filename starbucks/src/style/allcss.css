@@ -26,6 +26,7 @@ body{
     display: flex;
     align-items: center;
     gap: 5%;
+    box-shadow: 0px 1px 5px rgba(73, 72, 72, 0.518);
 }
 .logo{
     display: flex;
@@ -384,7 +385,100 @@ width: 100%;
     height: 200px;
     width: 200px;
 }
+/* othercontend css */
+.contend{
+    position: relative;
+    margin-top:5%;
+   
+    display: flex;
+    padding: 20px;
+}
+.contend p{
+    margin-left: 10%;
+    color:black ;
+}
+.contend p a{
+    text-decoration: none;
+    color: black;
+}
+.location{
+    padding: 20px 11%;
+    display: flex;
+    justify-content: space-between;
+    background-color: rgb(9, 64, 38);
+}
+.location button{
+    padding: 15px 50px;
+    padding-right: 80px;
+    background-color: transparent;
+    border-radius: 6px;
+    border: 1px solid white;
+    color: white;
+}
+#btn1{
+    
+    border-right:0px ;
+    border-top-right-radius: 0px;
+    border-bottom-right-radius: 0px;
+}
+#btn2{
+    
+    border-top-left-radius: 0px;
+    border-bottom-left-radius: 0px;
+}
+.location input{
+    color: white;
+    padding: 5px;
+    border: none;
+background-color: transparent;
+border-bottom: 1px solid white;
+}
+.location input::placeholder{
+    color: rgba(255, 255, 255, 0.396);
+}
+.selectionbar{
+    color: black;
+    background-color: rgba(195, 189, 189, 0.648);
+    display: flex;
+    gap: 20px;
+    padding: 20px 160px; 
+    
+}
+.selectionbar button{
+    font-size: 20px;
+    border: none;
+    background-color: transparent;
+    color: black;
+    text-decoration: none;
+    padding-right: 30px;
+    border-right: 2px solid black;
+}
+.selectionbar button:nth-child(3){
+    border-right: 0px;
+}
+.innerelement{
+    display: flex;
+    justify-content: center;
 
+}
+/* bestseller css */
+.bestseller{
+    width: 70%;
+    padding: 20px 30px;
+    display: flex;
+    gap: 5px;
+    row-gap: 20px;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+.card{
+    border-radius: 8px;
+    background-color: rgb(120, 211, 128);
+    padding: 10px;
+    height: 150px;
+    width: 200px;
+    box-shadow: 2px 5px 15px rgba(128, 128, 128, 0.584);
+}
 @media (max-width: 576px) {
     /* Styles for phones */
    .main{
