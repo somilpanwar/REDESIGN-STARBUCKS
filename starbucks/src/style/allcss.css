@@ -499,6 +499,28 @@ box-shadow: 2px 5px 1px black;
 .card h5,h4{
     margin-top: 15px;
 }
+.giftcard{
+  display: flex;
+  align-items: center;
+  padding: 10px;
+}
+.giftcard img{
+    filter: drop-shadow(12px 5px 5px black);
+}
+.giftcard button{
+    font-weight: 600;
+    margin-top: 30%;
+    margin-left: -40%;
+    background-color: rgb(3, 53, 3);
+    box-shadow: 2px 5px 1px black;
+    border-radius: 8px;
+    color: white;
+    padding: 10px;
+    border: none;
+}
+.giftcard h2{
+    font-size: 40px;
+}
 
 @media (max-width: 576px) {
     /* Styles for phones */

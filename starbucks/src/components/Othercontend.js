@@ -49,7 +49,7 @@ const Othercontend = () => {
     <>
       <div className="contend">
         <p>
-          <a href="/home">Home </a>
+          <a href="/">Home </a>
           <a href="/order"> > order</a>
         </p>
       </div>
