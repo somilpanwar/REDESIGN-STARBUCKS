@@ -387,6 +387,7 @@ width: 100%;
 }
 /* othercontend css */
 .contend{
+    width: 100%;
     position: relative;
     margin-top:5%;
    
@@ -445,13 +446,14 @@ border-bottom: 1px solid white;
     
 }
 .selectionbar button{
+    cursor: pointer;
     font-size: 20px;
     border: none;
     background-color: transparent;
-    color: black;
+    color: #000000c4;
     text-decoration: none;
     padding-right: 30px;
-    border-right: 2px solid black;
+    border-right: 2px solid #000000c4;
 }
 .selectionbar button:nth-child(3){
     border-right: 0px;
@@ -462,8 +464,8 @@ border-bottom: 1px solid white;
 
 }
 /* bestseller css */
-.bestseller{
-    width: 70%;
+.arrangeitems{
+    width: 90%;
     padding: 20px 30px;
     display: flex;
     gap: 5px;
@@ -472,13 +474,32 @@ border-bottom: 1px solid white;
     justify-content: space-around;
 }
 .card{
+    color: black;
+    background-image: linear-gradient(to bottom, rgb(30, 81, 30),rgb(168, 240, 185));
     border-radius: 8px;
-    background-color: rgb(120, 211, 128);
-    padding: 10px;
+    border: 1px solid rgba(128, 128, 128, 0.4);
+    padding: 20px;
     height: 150px;
     width: 200px;
     box-shadow: 2px 5px 15px rgba(128, 128, 128, 0.584);
 }
+.card button{
+    margin:10px 60px;
+    border: none;
+    font-weight: 600;
+    padding: 8px;
+    border-radius: 5px;
+background-color: rgb(10, 83, 10);
+color: white;
+box-shadow: 2px 5px 1px black;
+}
+.card h3{
+    color: white;
+}
+.card h5,h4{
+    margin-top: 15px;
+}
+
 @media (max-width: 576px) {
     /* Styles for phones */
    .main{
@@ -571,5 +592,36 @@ border-bottom: 1px solid white;
       padding: 5px;
 
 }
+.contend{
+    padding: 0px;
+    padding-top: 45px;
+}
+.contend p{
+    display: none;
+}
+
+.location{
+    display: flex;
+    justify-items: center;
+    flex-direction: column;
+}
+.location button{
+    padding:10px ;
+    padding-right: 20px;
+   margin-top: 20px;
+   
+}
+#btn1{
+    margin-left: 30px;
+}
+.selectionbar{
+    width: 100%;
+    padding: 15px 0px;
+    padding-left: 0px;
+}
+.selectionbar button{
+    margin-left: 15px;
+}
+
 
 }

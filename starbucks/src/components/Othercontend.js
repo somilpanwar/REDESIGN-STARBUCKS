@@ -13,6 +13,7 @@ import Drink from "./Drink";
 import Food from "./Food";
 
 const Othercontend = () => {
+    
   const [componentToShow, setComponentToShow] = useState("bestseller");
 
   const showBestseller = () => {
@@ -20,7 +21,9 @@ const Othercontend = () => {
   };
 
   const showNewArrivals = () => {
+
     setComponentToShow("newArrivals");
+    
   };
 
   const showTrending = () => {
@@ -70,11 +73,12 @@ const Othercontend = () => {
         </div>
       </div>
       <div className="selectionbar">
-        <button onClick={showBestseller}>Bestseller</button>
-        <button onClick={showNewArrivals}>Drinks</button>
+        <button onClick={showNewArrivals}>Drink</button>
         <button onClick={showTrending}>Food</button>
+        <button onClick={showBestseller}>Merchandise</button>
       </div>
       <div className="innerelement">
+        
         {componentToShow === "bestseller" && <Bestseller />}
         {componentToShow === "newArrivals" && <Drink />}
         {componentToShow === "trending" && <Food />}
