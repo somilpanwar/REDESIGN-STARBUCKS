@@ -2,7 +2,7 @@
 import '../style/allcss.css';
 import Navbar from 'react-bootstrap/Navbar';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
-import { faBars, faCalendar, faCar, faCartShopping, faEnvelope, faHamburger, faHome, faHouse, faPen, faPerson, faSearch } from '@fortawesome/free-solid-svg-icons';
+import {  faCartShopping, faHamburger, faPerson, faSearch } from '@fortawesome/free-solid-svg-icons';
 import { useState } from 'react';
 import { NavLink } from 'react-router-dom';
 

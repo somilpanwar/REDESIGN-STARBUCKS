@@ -1,6 +1,5 @@
 import React, { useState } from "react";
 import "../style/allcss.css";
-import { BrowserRouter as Router, Route, Routes } from "react-router-dom";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import {
   faBowlFood,
@@ -50,7 +49,7 @@ const Othercontend = () => {
       <div className="contend">
         <p>
           <a href="/">Home </a>
-          <a href="/order"> > order</a>
+          <a href="/order">  order</a>
         </p>
       </div>
 

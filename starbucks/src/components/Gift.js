@@ -9,7 +9,7 @@ const Gift = () => {
       <div className="contend">
         <p>
           <a href="/">Home </a>
-          <a href="/order"> > Gift Card</a>
+          <a href="/order">  Gift Card</a>
         </p>
       </div>
       <div className='location'>

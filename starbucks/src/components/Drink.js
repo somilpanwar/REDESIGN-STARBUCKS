@@ -1,4 +1,5 @@
 
+import axios from 'axios';
 import React, { useEffect, useState } from 'react'
 
 const Drink = () => {
@@ -7,8 +8,8 @@ const Drink = () => {
     const getitem = async()=>{
         try {
              setloading(true);
-            const data = await fetch('http://localhost:5000/api/product').then(console.log("data recieved!!"))
-             setimte(await data.json());
+            const data = await axios('https://redesign-starbucks.onrender.com/api/product').then(console.log("data recieved!!"))
+             setimte(await data.data);
              setloading(false);
 
         } catch (error) {

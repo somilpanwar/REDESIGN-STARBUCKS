@@ -4,7 +4,7 @@ import Navbarfile from './Navbarfile';
 import Footer from './Footer';
 import Othercontend from './Othercontend';
 const Order = () => {
-  const color ="green"
+
   return (
     <>
     <Navbarfile />

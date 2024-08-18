@@ -1,4 +1,5 @@
 import React, { useEffect, useState } from 'react'
+import axios from 'axios'
 
 const Bestseller = () => {
     const[item,setimte]=useState([]);
@@ -6,8 +7,8 @@ const Bestseller = () => {
     const getitem = async()=>{
         try {
             setloading(true);
-            const data = await fetch('http://localhost:5000/api/product').then(console.log("data recieved!!"))
-             setimte(await data.json());
+            const data = await axios('https://redesign-starbucks.onrender.com/api/product').then(console.log("data recieved!!"))
+             setimte(await data.data);
              setloading(false);
 
         } catch (error) {
@@ -26,7 +27,7 @@ const Bestseller = () => {
        {item.map((e,i)=>{
          const range = Math.random()*20;
          if(e.category==="Merchandise"){
-           while(count<8){
+           while(count<5){
             count+=1
          return(
             <div className='card' key={i}>
